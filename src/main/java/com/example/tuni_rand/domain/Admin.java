@@ -1,12 +1,11 @@
 package com.example.tuni_rand.domain;
 
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 
 import javax.persistence.*;
-import java.util.Date;
 
 @Entity
+@PrimaryKeyJoinColumn( name = "id" )
 public class Admin extends  User {
 
     public Admin() {

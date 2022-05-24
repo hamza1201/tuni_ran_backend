@@ -10,6 +10,7 @@ import java.util.List;
 
 
 @Entity
+@PrimaryKeyJoinColumn( name = "id" )
 public class Agent extends User {
     private String nom;
     private String nomEntreprise;

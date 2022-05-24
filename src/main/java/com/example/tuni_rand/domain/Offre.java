@@ -24,6 +24,7 @@ public class Offre {
     private Double prix;
     private Double rate;
     private String imageUrl;
+    private int nbrPersonne;
     @JsonFormat(pattern = "yyyy-MM-dd")
     @Column(updatable = false)
     private Date created_At;
@@ -138,6 +139,14 @@ public class Offre {
 
     public void setUpdated_At(Date updated_At) {
         this.updated_At = updated_At;
+    }
+
+    public int getNbrPersonne() {
+        return nbrPersonne;
+    }
+
+    public void setNbrPersonne(int nbrPersonne) {
+        this.nbrPersonne = nbrPersonne;
     }
 
     @PrePersist

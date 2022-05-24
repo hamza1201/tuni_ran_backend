@@ -9,6 +9,7 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
+@PrimaryKeyJoinColumn( name = "id" )
 public class Client extends User {
     private String nom;
     private String genre;
